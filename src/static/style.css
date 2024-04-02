@@ -8,12 +8,39 @@ body, html {
     display: flex;
     height: 100%;
 }
-
-.panel {
-    flex: 1;
-    overflow: auto;
+#directory-structure {
+    /* flex: 1; */
+    /* overflow: auto; */
     border: 1px solid #ccc;
+    height: 100%;
+    width: 20%;
 }
+
+#preview {
+    /* flex: 1; */
+    /* overflow: auto; */
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 80%;
+}
+
+#viewer {
+    /* flex: 2; */
+    /* overflow: auto; */
+    float: left;
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+/* #origin-viewer {
+    /* flex: 2; */
+    /* overflow: auto; */
+    /* float: right;
+    border: 1px solid #ccc;
+    height: 100%;
+    width: 49%; */
+/* } */
 
 #directory-structure {
     background: #f9f9f9;

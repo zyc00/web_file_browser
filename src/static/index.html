@@ -5,15 +5,23 @@
     <title>Directory Browser</title>
     <link rel="stylesheet" href="/static/style.css">
     <script type="text/javascript" src="/static/o3dv/o3dv.min.js"></script>
+    <script type="importmap"> 
+        { 
+            "imports": { 
+                "three": "https://unpkg.com/three@0.162.0/build/three.module.js", 
+                "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/" 
+             } 
+        } 
+    </script>
 </head>
 <body>
 <div id="container">
     <div id="directory-structure" class="panel"></div>
     <div id="preview" class="panel">
-        Select a file to preview
-        <div id="viewer" class="viewer"></div>
+        <canvas id="viewer" class="viewer"></canvas>
+        <!-- <canvas id="origin-viewer" class="viewer"></canvas> -->
     </div>
 </div>
-<script src="/static/script.js"></script>
+<script type="module" src="/static/script.js"></script>
 </body>
 </html>
